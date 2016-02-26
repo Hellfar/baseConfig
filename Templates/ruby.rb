@@ -6,7 +6,7 @@ if __FILE__ == $0
 
   options = {}
   OptionParser.new do |opts|
-    opts.banner = "Usage: example.rb [options]"
+    opts.banner = "Usage: #{$0} [options]"
 
     opts.on("-v", "--[no-]verbose", "Run verbosely") do |v|
       options[:verbose] = v

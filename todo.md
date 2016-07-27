@@ -14,3 +14,7 @@ R
 Ruby  
 atom  
 Gitkraken
+
+## Alias
+
+R="R --no-save"

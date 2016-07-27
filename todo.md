@@ -15,6 +15,8 @@ Ruby
 atom  
 Gitkraken
 
+sudo npm install -g node-static
+
 ## Alias
 
 R="R --no-save"

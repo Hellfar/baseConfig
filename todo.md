@@ -22,6 +22,8 @@
 
 ## Alias
 
+- `job="jobs"`
+- `j="jobs"`
 - `R="R --no-save"`
 - `log="less -W +F"`
 

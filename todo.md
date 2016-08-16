@@ -27,6 +27,8 @@
 
 ## bashrc
 
+history=-1
+
 ```
 man () {
   case "$(type -t "$1"):$1" in

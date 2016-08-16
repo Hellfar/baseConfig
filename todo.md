@@ -23,6 +23,7 @@
 ## Alias
 
 - `R="R --no-save"`
+- `log="tailf"`
 
 ## bashrc
 

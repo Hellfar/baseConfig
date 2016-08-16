@@ -23,7 +23,7 @@
 ## Alias
 
 - `R="R --no-save"`
-- `log="tailf"`
+- `log="less -W +F"`
 
 ## bashrc
 

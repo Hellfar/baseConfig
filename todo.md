@@ -39,3 +39,5 @@ man () {
   esac
 }
 ```
+
+[https://superuser.com/questions/117841/get-colors-in-less-or-more](https://superuser.com/questions/117841/get-colors-in-less-or-more)

@@ -1,0 +1,8 @@
+[default]
+r-base-core
+
+atom
+gitkraken
+
+[npm]
+node-static

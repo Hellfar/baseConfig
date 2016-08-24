@@ -1,6 +1,12 @@
 #!/bin/bash
 
-./.bin/iniLoader.sh ".*" install_list | while read line; do
+GROUP=".*"
+
+if [ -n "$1" ]; then
+  GROUP="$1"
+fi
+
+./.bin/iniLoader.sh "$GROUP/.*" install_list | while read line; do
   IFS=/ read group soft <<< `echo "$line"`
   case "$group" in
     "default")

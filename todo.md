@@ -2,25 +2,22 @@
 
 ## Installation
 
-- retext python3-docutils python3-markdown
-- meld
-
 - redshift
 - Telegram
 - Opera
 - Quassel
 
 - node
-- R
 - Ruby
 - rails
 
-- atom
-- Gitkraken
+## alias
 
-- sudo npm install -g node-static
+## less
 
-## Alias
+export LESS='-R'
+export LESSOPEN='|~/.lessfilter %s'
+chmod u+x ~/.lessfilter
 
 ## bashrc
 

@@ -1,6 +1,11 @@
 [default]
 r-base-core
 
+retext
+python3-docutils
+python3-markdown
+
+meld
 atom
 gitkraken
 

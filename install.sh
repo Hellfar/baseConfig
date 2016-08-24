@@ -1,5 +1,13 @@
 #!/bin/bash
 
 ./.bin/iniLoader.sh ".*" install_list | while read line; do
-  echo "$line"
+  IFS=/ read group soft <<< `echo "$line"`
+  case "$group" in
+    "default")
+      sudo apt-get install "$soft" -y
+      ;;
+    "npm")
+      sudo npm -g install "$soft"
+      ;;
+  esac
 done

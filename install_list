@@ -1,4 +1,9 @@
 [default]
+
+# less
+python-pygments
+
+# R lang
 r-base-core
 
 retext
@@ -9,7 +14,12 @@ meld
 atom
 gitkraken
 
+git
+node
+
 [npm]
+
+# static
 node-static
 
 bower

@@ -3,6 +3,10 @@
 # less
 python-pygments
 
+tree
+git
+node
+
 # R lang
 r-base-core
 
@@ -13,9 +17,6 @@ python3-markdown
 meld
 atom
 gitkraken
-
-git
-node
 
 # Flash
 adobe-flashplugin

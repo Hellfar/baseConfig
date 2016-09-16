@@ -1,0 +1,2 @@
+[alias]
+        meld = !/path/to/git-meld/git-meld.pl

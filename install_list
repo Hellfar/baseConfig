@@ -5,7 +5,9 @@ python-pygments
 
 tree
 git
+
 node
+ruby
 
 # R lang
 r-base-core

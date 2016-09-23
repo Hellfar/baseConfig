@@ -1,3 +1,4 @@
+sudo="sudo "
 job="jobs"
 j="jobs"
 

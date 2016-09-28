@@ -1,5 +1,7 @@
 #!/bin/bash
 
+ROOTINSTALLDIR="install"
+
 GROUP=".*"
 
 if [ -n "$1" ]; then
@@ -7,12 +9,12 @@ if [ -n "$1" ]; then
 fi
 
 # Package installation
-./.bin/iniLoader.sh "^$GROUP/.*" install_list | while read line; do
+./.bin/iniLoader.sh "^$GROUP/.*" "$ROOTINSTALLDIR/install_list" | while read line; do
   IFS=/ read group soft <<< `echo "$line"`
-  script="`ls install_scripts/ | grep -P \"^$soft(\.sh)?$\"`"
+  script="`ls $ROOTINSTALLDIR/install_scripts/ | grep -P \"^$soft(\.sh)?$\"`"
   if [ -n "$script" ]; then
     echo "$script" | while read line2; do
-      ./install_script/$line2 "$group" "$soft"
+      ./$ROOTINSTALLDIR/install_scripts/$line2 "$group" "$soft"
     done
   else
     case "$group" in
@@ -30,12 +32,13 @@ fi
 done
 
 # configuration deployment
-./.bin/iniLoader.sh "^$GROUP/.*" deployment_list | while read line; do
+./.bin/iniLoader.sh "^$GROUP/.*" "$ROOTINSTALLDIR/install_deployment/deployment_list" | while read line; do
   IFS=/ read group pattern <<< `echo "$line"`
-  script="`ls implement_scripts/ | grep -P \"^$pattern(\.sh)?$\"`"
+  IFS=: read elem dest <<< `echo "$pattern"`
+  script="`ls $ROOTINSTALLDIR/install_deployment/implement_scripts/ | grep -P \"^$elem(\.sh)?$\"`"
   if [ -n "$script" ]; then
     echo "$script" | while read line2; do
-      ./implement_scripts/$line2 "$group" "$pattern"
+      ./$ROOTINSTALLDIR/implement_scripts/$line2 "$group" "$pattern"
     done
   else
     IFS=: read origin dest <<< `echo "$pattern"`

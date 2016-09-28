@@ -7,8 +7,6 @@
 - Opera
 - Quassel
 
-- node
-- Ruby
 - rails
 
 ## alias

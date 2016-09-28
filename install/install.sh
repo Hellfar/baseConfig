@@ -31,6 +31,9 @@ fi
   fi
 done
 
+sudo apt-get -f install
+sudo apt autoremove
+
 # configuration deployment
 ./.bin/iniLoader.sh "^$GROUP/.*" "$ROOTINSTALLDIR/install_deployment/deployment_list" | while read line; do
   IFS=/ read group pattern <<< `echo "$line"`

@@ -27,6 +27,9 @@ fi
       "gem")
         gem install "$soft"
         ;;
+      "apm")
+        apm install "$soft"
+        ;;
     esac
   fi
 done

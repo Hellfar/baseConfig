@@ -36,3 +36,16 @@ grunt
 [gem]
 
 pry
+
+[apm]
+
+file-icons
+
+# minimap packages
+minimap
+minimap-cursorline
+minimap-find-and-replace
+minimap-git-diff
+minimap-highlight-selected
+minimap-pigments
+minimap-selection

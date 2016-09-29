@@ -9,8 +9,6 @@ git
 node
 ruby
 
-jekyll
-
 # R lang
 r-base-core
 
@@ -35,11 +33,17 @@ grunt
 
 [gem]
 
+bundle
+
+jekyll
+
 pry
 
 [apm]
 
 file-icons
+
+highlight-selected
 
 # minimap packages
 minimap

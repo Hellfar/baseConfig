@@ -44,7 +44,7 @@ sudo apt autoremove
   script="`ls $ROOTINSTALLDIR/install_deployment/implement_scripts/ | grep -P \"^$elem(\.sh)?$\"`"
   if [ -n "$script" ]; then
     echo "$script" | while read line2; do
-      ./$ROOTINSTALLDIR/implement_scripts/$line2 "$group" "$pattern"
+      ./$ROOTINSTALLDIR/install_deployment/implement_scripts/$line2 "$group" "$pattern"
     done
   else
     IFS=: read origin dest <<< `echo "$pattern"`

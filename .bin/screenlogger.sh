@@ -4,7 +4,7 @@
 
 if [ -z "$1" ]
 then
-  export LOGFILE="~/log/lock_screen.log"
+  export LOGFILE=~/log/lock_screen.log
 else
   export LOGFILE="$1"
 fi
@@ -12,18 +12,18 @@ fi
 export SCREENSAVERSERVICE="org.mate.ScreenSaver"
 
 exit_report(){
-  printf "$(date)\tMonitoring Terminated"
+  printf "$(date)\tMonitoring Terminated\n"
 }
 trap "exit_report; exit;" 0
 
 lockmon() {
   adddate() {
     while IFS= read -r line; do
-      printf "$(date)\t$line" | grep "boolean" | sed 's/   boolean true/Screen Locked/' | sed 's/   boolean false/Screen Unlocked/'
+      printf "$(date)\t$line\n" | grep "boolean" | sed 's/   boolean true/Screen Locked/' | sed 's/   boolean false/Screen Unlocked/'
     done
   }
-  printf "$(date)\tMonitoring Started"
+  printf "$(date)\tMonitoring Started\n"
   dbus-monitor --session "type='signal',interface='$SCREENSAVERSERVICE'" | adddate
 }
 
-lockmon >> "$LOGFILE"
+lockmon >> $LOGFILE

@@ -19,6 +19,7 @@ python3-markdown
 meld
 atom
 gitkraken
+pencil
 
 # Flash
 adobe-flashplugin
@@ -42,6 +43,9 @@ pry
 [apm]
 
 file-icons
+pigments
+bezier-curve-editor
+tablr
 
 highlight-selected
 

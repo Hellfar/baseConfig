@@ -1,5 +1,7 @@
 [default]
 
+libgtk-3-dev
+
 # less
 python-pygments
 
@@ -11,6 +13,9 @@ ruby
 
 # R lang
 r-base-core
+
+geoclue-2.0
+redshift-gtk
 
 retext
 python3-docutils

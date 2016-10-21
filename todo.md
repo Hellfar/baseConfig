@@ -2,7 +2,6 @@
 
 ## Installation
 
-- redshift
 - Telegram
 - Opera
 - Quassel

@@ -59,4 +59,5 @@ sudo apt autoremove
   fi
 done
 
+rm -rf tmp/
 # rm -rf install.sh install_script

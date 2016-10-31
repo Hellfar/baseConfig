@@ -19,6 +19,8 @@ fish
 geoclue-2.0
 redshift-gtk
 
+guake
+
 retext
 python3-docutils
 python3-markdown

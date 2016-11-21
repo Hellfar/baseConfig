@@ -1,3 +1,5 @@
 #!/bin/bash
 
 sleep 5 && $HOME/.bin/screenlogger.sh &
+sleep 5 && redshift-gtk &
+sleep 5 && guake &

@@ -4,4 +4,4 @@ j="jobs"
 
 log="less -W +F"
 
-R="R --no-save"
+R="R --no-save --quiet"
